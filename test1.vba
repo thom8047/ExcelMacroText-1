@@ -1,11 +1,16 @@
 Sub Macro1()
-'
-' Macro1 Macro
-' test
-'
-
-'
-    Range("B1").Select
-    ActiveCell.FormulaR1C1 = "Hello World"
-    Range("B2").Select
+    '   create workbook
+    
+    Dim excelAPP
+    Dim excelBook
+    
+    ' set them
+    Set excelAPP = CreateObject("Excel.Application")
+    Set excelBook = excelApp.WorkBooks.Open("C:\Users\kedwa\Desktop\test.xls", 0, True)
+    
+    excelAPP.Quit
+    
+    Set excelAPP = Nothing
+    Set excelBook = Nothing
+        
 End Sub
