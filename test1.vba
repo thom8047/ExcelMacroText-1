@@ -2,6 +2,8 @@ Option Explicit
 
 On Error Resume Next
 
+Test
+
 Sub Test()
     '   create workbook
     
