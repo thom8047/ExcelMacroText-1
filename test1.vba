@@ -1,4 +1,8 @@
-Sub Macro1()
+Option Explicit
+
+On Error Resume Next
+
+Sub Test()
     '   create workbook
     
     Dim excelAPP
